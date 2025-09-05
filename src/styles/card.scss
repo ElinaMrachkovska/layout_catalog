@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(4, 200px);
   margin: 50px 128px;
-  gap: 48px 46px;
+  gap: 46px 48px;
   justify-content: center;
 }
 
@@ -12,7 +12,6 @@
   padding-bottom: 16px;
   width: 200px;
   border: 1px solid $border-color;
-  box-shadow: 0 0 15px rgba(129, 126, 126, 0.3);
   border-radius: 5px;
   background-color: $primari-white;
   box-sizing: border-box;
