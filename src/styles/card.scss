@@ -1,9 +1,14 @@
 .main {
-  display: grid;
-  grid-template-columns: repeat(4, 200px);
-  margin: 50px 128px;
-  gap: 46px 48px;
   justify-content: center;
+}
+
+.container {
+  box-sizing: border-box;
+  justify-content: center;
+  display: grid;
+  padding: 50px 40px;
+  gap: 46px 48px;
+  grid-template-columns: repeat(1, 200px);
 
   @media (min-width: 488px) {
     grid-template-columns: repeat(2, $card-width);
@@ -44,7 +49,7 @@
   &__title {
     color: $primari-text-color;
     font-weight: 500;
-    font-size: $medium-size;
+    font-size: 12px;
     line-height: 18px;
     letter-spacing: 0%;
   }
@@ -75,6 +80,7 @@
     height: 40px;
     border: 1px solid $accent-color;
     border-radius: 5px;
+
     background-color: $accent-color;
     color: $primari-white;
     font-weight: 700;
