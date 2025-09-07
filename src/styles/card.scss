@@ -32,6 +32,7 @@
   border-radius: 5px;
   background-color: $primari-white;
   box-sizing: border-box;
+  transition: transform 0.3s;
 
   &__img {
     display: block;
@@ -52,6 +53,7 @@
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0%;
+    transition: color 0.3s;
   }
 
   &__text {
@@ -86,9 +88,11 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0%;
     text-align: center;
     text-transform: uppercase;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
 
     &:hover {
       border: 1px solid $accent-color;
@@ -133,4 +137,12 @@
   font-size: 16px;
   letter-spacing: 0%;
   text-align: right;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card:hover .card__title {
+  color: $hover-card;
 }
